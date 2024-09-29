@@ -71,6 +71,10 @@ public:
 
     // DELETELAST FUNCTION
    void deleteNode(){
+    if (length==0){
+        cout<<"List is empty"<<endl;
+        return;
+    }
     Node* temp=head;
     Node* pre = head;
     while(temp->next!=nullptr){
